@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.letra{
+    font-family: 'Fredoka One', cursive;
+}
+main{
+    margin-top: 70px;
+}
+
+.bg-pink{
+    background-color: #ed1544;
+    color: whitesmoke;
+}
+.btn-acept{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: #08bb3d;
+    &:hover{
+        background-color: whitesmoke;
+        color:#08bb3d;  
+        border: 2px solid #08bb3d; 
+    }
+    &:active{
+        background-color:#08bb3d;
+        color: #333333;
+        border: 2px solid #333333; 
+    }
+}
+.btn-cancel{
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: #c4090c;
+    &:hover{
+        background-color: whitesmoke;
+        color:#c4090c;  
+        border: 2px solid #c4090c; 
+    }
+    &:active{
+        background-color: #c4090c;
+        color: #333333;
+        border: 2px solid #333333; 
+    }
+}
+.btn-reg{
+    color:whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: #ed1544;
+    &:hover{
+        background-color: whitesmoke;
+        color:#ed1544;  
+        border: 2px solid #ed1544; 
+    }
+    &:active{
+        background-color:#ed1544;
+        color: #333333;
+        border: 2px solid #333333; 
+    }
+}
+.btn-edit{
+    color:whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: #e9bd15;
+    &:hover{
+        background-color: whitesmoke;
+        color:#e9bd15;  
+        border: 2px solid #e9bd15; 
+    }
+    &:active{
+        background-color:#e9bd15;
+        color: #333333;
+        border: 2px solid #333333; 
+    }
+}
+.table-pink{
+    thead{
+        color:whitesmoke;
+        background-color:#ed1544
+    }
+    tbody{
+        color:whitesmoke;
+        background-color:#e9537d;
+        &:hover{
+            background-color:#ed1544;
+            color: white;   
+        }
+        &:active{
+            background-color:#ed1544;
+            color: #f5bacb;
+        }
+    }
+}
+.ador-form{
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+    background-color: #ed1544;
+}

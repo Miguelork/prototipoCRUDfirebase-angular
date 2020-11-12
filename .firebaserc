@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "simulador-43792": {
+      "hosting": {
+        "simulacro": [
+          "simulador-43792"
+        ]
+      }
+    }
+  }
+}
