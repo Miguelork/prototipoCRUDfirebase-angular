@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CrudService } from '../crud.service';
 import { Producto } from '../producto';
 
@@ -8,21 +8,23 @@ import { Producto } from '../producto';
   styleUrls: ['./editar.component.scss']
 })
 export class EditarComponent implements OnInit {
-  editProducto:Producto={
+  @Input() editProducto:Producto={
     nombre:'',
     categoria:'',
     precio:0,
     stock:0,
     fabricante:''
   }
-
   constructor(private crud: CrudService) { }
 
   ngOnInit(): void {
   }
 
-  editar(producto){
+  editar(producto){ 
     this.editProducto = producto;
+  }
+  aggProductEditado(){
+    this.crud.editarProducto(this.editProducto);
   }
 
 }

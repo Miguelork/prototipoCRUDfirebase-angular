@@ -10,14 +10,13 @@ import { Producto } from '../producto';
 export class ListaComponent implements OnInit {
 
   productos:Producto[];
-  editProducto:Producto={
+  product:Producto={
     nombre:'',
     categoria:'',
     precio:0,
     stock:0,
     fabricante:''
   }
-
   constructor(private crud: CrudService) {
     this.crud.listProducto().subscribe(prod=>{
       this.productos = prod;
@@ -32,10 +31,9 @@ export class ListaComponent implements OnInit {
     this.crud.eliminarProducto(producto);
   }
 
-  editar(producto){ 
-    this.editProducto = producto;
+  almacenaProd(producto){
+    this.product = producto;
+    alert(this.product);
   }
-  aggProductEditado(){
-    this.crud.editarProducto(this.editProducto);
-  }
+
 }
