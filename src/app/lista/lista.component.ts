@@ -10,6 +10,13 @@ import { Producto } from '../producto';
 export class ListaComponent implements OnInit {
 
   productos:Producto[];
+  editProducto:Producto={
+    nombre:'',
+    categoria:'',
+    precio:0,
+    stock:0,
+    fabricante:''
+  }
 
   constructor(private crud: CrudService) {
     this.crud.listProducto().subscribe(prod=>{
@@ -21,4 +28,14 @@ export class ListaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  eliminar(producto){
+    this.crud.eliminarProducto(producto);
+  }
+
+  editar(producto){ 
+    this.editProducto = producto;
+  }
+  aggProductEditado(){
+    this.crud.editarProducto(this.editProducto);
+  }
 }

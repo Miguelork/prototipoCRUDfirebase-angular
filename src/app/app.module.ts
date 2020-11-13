@@ -11,12 +11,14 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 
 import { CrudService } from './crud.service';
+import { EditarComponent } from './editar/editar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     AgregarComponent,
+    EditarComponent,
   ],
   imports: [
     BrowserModule,
